@@ -65,10 +65,10 @@ _"With SWR, components will get a stream of data updates constantly and automati
 ## Installation
 
 ```sh
-yarn add swr-firestore-v9
+yarn add swr-firebase
 
 # or
-npm install swr-firestore-v9
+npm install swr-firebase
 ```
 
 Install firebase:
@@ -95,7 +95,7 @@ If you're using `next.js`, this goes in your `pages/_app.js` file.
 import React from 'react'
 import 'firebase/firestore'
 import 'firebase/auth'
-import { Fuego, FuegoProvider } from 'swr-firestore-v9'
+import { Fuego, FuegoProvider } from 'swr-firebase'
 
 const firebaseConfig = {
   // put yours here
@@ -124,7 +124,7 @@ _Assuming you've already completed the setup..._
 
 ```js
 import React from 'react'
-import { useDocument } from 'swr-firestore-v9'
+import { useDocument } from 'swr-firebase'
 import { Text } from 'react-native'
 
 export default function User() {
@@ -144,7 +144,7 @@ export default function User() {
 
 ```js
 import React from 'react'
-import { useCollection } from 'swr-firestore-v9'
+import { useCollection } from 'swr-firebase'
 import { Text } from 'react-native'
 
 export default function UserList() {
@@ -388,7 +388,7 @@ Video [here](https://imgur.com/a/o9AlI4N).
 
 ```typescript
 import React from 'react'
-import { fuego, useCollection } from 'swr-firestore-v9'
+import { fuego, useCollection } from 'swr-firebase'
 
 const collection = 'dump'
 const limit = 1
@@ -456,7 +456,7 @@ You'll rely on `useDocument` to query documents.
 
 ```js
 import React from 'react'
-import { useDocument } from 'swr-firestore-v9'
+import { useDocument } from 'swr-firebase'
 
 const user = { id: 'Fernando' }
 export default () => {
@@ -487,7 +487,7 @@ import {
   getFuego, // get the firebase instance used by this lib
   getDocs, // prefetch a collection, without being hooked into SWR or React
   getDoc, // prefetch a document, without being hooked into SWR or React
-} from 'swr-firestore-v9'
+} from 'swr-firebase'
 ```
 
 ## `useDocument(path, options)`

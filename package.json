@@ -1,6 +1,6 @@
 {
-  "name": "swr-firestore-v9",
-  "version": "1.0.6",
+  "name": "swr-firebase",
+  "version": "1.0.0",
   "description": "SWR React hooks for Firestore, that you can actually use in production, on every screen.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -21,13 +21,13 @@
     "firestore",
     "firebase"
   ],
-  "repository": "https://github.com/binarypie/swr-firestore",
+  "repository": "https://github.com/binarypie/swr-firebase",
   "author": "binarypie (https://github.com/binarypie)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/binarypie/swr-firestore/issues"
+    "url": "https://github.com/binarypie/swr-firebase/issues"
   },
-  "homepage": "https://github.com/binarypie/swr-firestore#readme",
+  "homepage": "https://github.com/binarypie/swr-firebase#readme",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/lodash.get": "^4.4.6",
